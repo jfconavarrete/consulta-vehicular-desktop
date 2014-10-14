@@ -1,0 +1,35 @@
+<div class="container">
+
+    <div ng-include="'components/navbar/navbar.html'"></div>
+
+    <div class="jumbotron text-center">
+        <h1>Consulta Vehicular</h1>
+
+        <p class="lead">
+            Introduce la placa de tu vehículo
+        </p>
+
+        <form novalidate role="form">
+            <div class="form-group">
+                <input type="text" class="form-control main-input" ng-model="plate">
+            </div>
+            <p>
+                <a class="btn btn-lg btn-success" ng-click="main.search(plate)">Consultar</a>
+            </p>
+        </form>
+    </div>
+
+    <div class="row">
+        <div class="col-sm-6 col-md-4">
+            {{ main.today }}
+        </div>
+    </div>
+
+    <hr>
+
+    <div class="footer">
+        <p>With ♥ from <a href="https://twitter.com/Swiip">@Swiip</a>
+        </p>
+    </div>
+
+</div>
